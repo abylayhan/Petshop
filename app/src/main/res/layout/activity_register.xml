@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".register">
+
+
+
+    <TextView
+        android:id="@+id/applogo"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:textStyle="bold"
+
+        android:textColor="@color/white"
+
+
+
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/logobackground"
+        android:text="ZOOKING"
+        android:gravity="center"
+
+
+        android:textSize="50dp">
+
+    </TextView>
+    <TextView
+        android:id="@+id/auth"
+        android:layout_width="346dp"
+        android:layout_height="81dp"
+        android:layout_below="@id/applogo"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20sp"
+        android:text="Регистрация"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+
+
+        android:textSize="25dp">
+
+    </TextView>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@drawable/layoutbackground"
+        android:layout_marginTop="320dp">
+
+    <EditText
+            android:id="@+id/register_username_input"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/edittextbackground"
+            android:hint="Имя пользователя"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/purple_200"
+            android:textColorHint="@color/purple_200"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            >
+
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/register_phone_input"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/register_username_input"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextbackground"
+            android:hint="номер телефона"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@color/purple_200"
+            android:textColorHint="@color/purple_200"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            >
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/register_password_input"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/register_phone_input"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextbackground"
+            android:hint="пароль"
+            android:inputType="textPassword"
+            android:padding="10dp"
+
+            android:textColor="@color/purple_200"
+            android:textColorHint="@color/purple_200"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            >
+
+        </EditText>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/register_btn"
+            android:layout_width="285dp"
+            android:layout_height="62dp"
+
+            android:layout_below="@+id/register_password_input"
+            android:layout_marginStart="65dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/input_design"
+
+            android:text="Регистрация"
+
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"
+
+
+            ></androidx.appcompat.widget.AppCompatButton>
+
+</RelativeLayout>
+
+
+</RelativeLayout>

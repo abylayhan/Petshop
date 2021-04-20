@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6A79FB"
+    tools:context=".login">
+
+
+
+    <TextView
+        android:id="@+id/applogo"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:textStyle="bold"
+
+        android:textColor="@color/white"
+
+
+
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/logobackground"
+        android:text="ZOOKING"
+        android:gravity="center"
+
+
+        android:textSize="50dp">
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/auth"
+        android:layout_width="346dp"
+        android:layout_height="81dp"
+        android:layout_below="@id/applogo"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="33dp"
+        android:text="Аутентификация"
+        android:textColor="@color/white"
+
+
+        android:textSize="25dp">
+
+    </TextView>
+
+
+   <RelativeLayout
+       android:layout_marginTop="15dp"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/auth"
+       android:background="@drawable/layoutbackground">
+
+    <EditText
+        android:id="@+id/login_phone_input"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/edittextbackground"
+        android:hint="номер телефона"
+        android:inputType="number"
+
+        android:padding="10dp"
+        android:textColorHint="@color/purple_200"
+        android:textColor="@color/purple_200"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/login_password_input"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/login_phone_input"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/edittextbackground"
+        android:hint="пароль"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+
+        android:textColor="@color/purple_200"
+        android:textColorHint="@color/purple_200"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        >
+
+    </EditText>
+
+    <LinearLayout
+        android:layout_below="@+id/login_password_input"
+        android:layout_marginTop="20dp"
+        android:id="@+id/linear_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+
+
+        >
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/login_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Material.Drawable.CheckBox"
+            android:text="запомнить меня"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_marginLeft="55dp"
+
+            ></com.rey.material.widget.CheckBox>
+
+        <TextView
+            android:id="@+id/forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="забыли пароль?"
+            android:textColor="@color/teal_200"
+            android:textSize="15dp"
+            android:textStyle="bold"></TextView>
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_btn"
+        android:layout_width="285dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/linear_checkbox"
+        android:layout_marginStart="65dp"
+       android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/input_design"
+
+
+
+        android:text="ВХОД"
+
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+
+
+        ></androidx.appcompat.widget.AppCompatButton>
+
+    <TextView
+        android:id="@+id/admin_panel_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Админ"
+        android:textColor="@color/teal_200"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/login_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="80dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/not_admin_panel_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Для клиента"
+        android:textColor="@color/teal_200"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/login_btn"
+
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="80dp"
+        android:visibility="invisible"
+        ></TextView>
+   </RelativeLayout>
+
+</RelativeLayout>

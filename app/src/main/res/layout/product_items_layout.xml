@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="15dp"
+    android:background="@color/white"
+    app:cardElevation="15dp"
+
+    >
+<RelativeLayout
+    android:layout_width="wrap_content"
+
+
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+
+    >
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Наименование"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/purple"
+        ></TextView>
+
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="349dp"
+        android:layout_height="183dp"
+        android:layout_below="@+id/product_name"
+        android:background="@drawable/logobackground"
+        android:layout_marginTop="3dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+
+        ></ImageView>
+
+    <TextView
+            android:id="@+id/product_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Описание"
+            android:textAlignment="center"
+            android:layout_below="@+id/product_image"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+        android:background="@color/purple"
+
+
+            ></TextView>
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Цена"
+        android:textAlignment="center"
+        android:layout_below="@+id/product_description"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/purple"
+
+
+        ></TextView>
+
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

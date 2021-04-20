@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/seashell"
+    tools:context=".Admin.AdminCategoryActivity">
+
+    <LinearLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/logo"
+            android:background="@color/colorAccent">
+
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Магазин зоотоваров"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <ImageView
+            android:id="@+id/search"
+            android:layout_marginLeft="100dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/search">
+
+        </ImageView>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_below="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Какое у вас животное?"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        >
+
+
+    </TextView>
+
+
+    <LinearLayout
+        android:id="@+id/first_line"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/slogan"
+        >
+
+        <ImageView
+            android:id="@+id/cat"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/cat"
+            android:layout_margin="10dp"
+
+
+
+            >
+
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/chicken"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/chicken"
+            android:layout_margin="10dp"
+
+
+            >
+
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/dog"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/dog"
+
+            android:layout_margin="10dp"
+
+            >
+
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/fish"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/fish"
+
+            android:layout_margin="10dp"
+
+            >
+
+
+        </ImageView>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_line"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/first_line"
+        >
+
+        <ImageView
+            android:id="@+id/hamster"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/hamster"
+            android:layout_margin="10dp"
+
+
+
+            >
+
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/spider"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/spider"
+            android:layout_margin="10dp"
+
+
+            >
+
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/hamster1"
+            android:layout_width="48dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+
+            android:src="@drawable/hamster"
+
+            >
+
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/shelter"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/shelter"
+            android:layout_margin="10dp"
+
+            >
+
+
+        </ImageView>
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/check_orders_btn"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_above="@+id/admin_logout_btn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Посмотреть заказы"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/maintain_btn"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_above="@+id/check_orders_btn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Продукты"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/admin_logout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Выходы"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        />
+</RelativeLayout>
